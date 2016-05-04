@@ -19,7 +19,15 @@ $(document).ready(function () {
             socket.emit('admin drop', { data : options });
         }
     });
+    
+    $('#send').click(function() {
+        socket.emit('send', 'i send you ...');
+    });
 
     $('.sortable').sortable({ revert : false });
+    
+    socket.on('msg', function(msg) {
+        console.log(msg);
+    });
     
 });
