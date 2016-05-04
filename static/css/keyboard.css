@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 85%/1.5 Verdana, Sans-Serif;
+  background: #aaa  ;
+}
+li, #write {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently not supported by any browser */
+}
+#keyboard-container, #test-container {
+  margin: 100px auto;
+  width: 688px;
+}
+
+#test-container .flex .inline {
+    margin: 4px;
+    background-color: #fff;
+    border: solid black 1px;
+    padding: 4px;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#test-container .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#write {
+  margin: 0 0 5px;
+  padding: 5px;
+  width: 671px;
+  height: 200px;
+  font: 1em/1.5 Verdana, Sans-Serif;
+  background: #fff;
+  border: 1px solid #f9f9f9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  resize: none;
+}
+#keyboard {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#keyboard li {
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #f9f9f9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.capslock,
+.tab,
+.left-shift {
+  clear: left;
+}
+#keyboard .tab,
+#keyboard .delete {
+  width: 70px;
+}
+#keyboard .capslock {
+  width: 80px;
+}
+#keyboard .return {
+  width: 77px;
+}
+#keyboard .left-shift {
+  width: 95px;
+}
+#keyboard .right-shift {
+  width: 109px;
+}
+.lastitem {
+  margin-right: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+#keyboard .space {
+  clear: left;
+  width: 681px;
+}
+.on {
+  display: none;
+}
+#keyboard li:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  border-color: #e5e5e5;
+  cursor: pointer;
+}
+#keyboard .keydown {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  border-color: #e5e5e5;
+  background-color: aquamarine !important;
+}
+
+//fix no textarea scroll bar in osx
+//http://stackoverflow.com/questions/7492062/css-overflow-scroll-always-show-vertical-scroll-bar
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+#event-container {
+  width: 600px;
+}
+
+.label {
+  width: 75px;
+}
+
+.value {
+  width: 75px;
+}
+
+
+.green {
+    background-color: lawngreen !important;
+}
+
+.red {
+    background-color: orangered !important;
+}
