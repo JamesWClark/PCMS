@@ -1,0 +1,44 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#activities .activity, #plan .activity {
+  margin-bottom: 28px;
+  background: #F3E2A9;
+  border: solid #F79F81 1px;
+  padding: 48px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#top-nav {
+  margin-bottom: 50px;
+}
+
+.x1 {
+  flex: 1 0 auto;
+}
+
+.x6 {
+  flex: 6 0 auto;
+}
+
+
+.column {
+  flex-direction: column;
+}
+
+#activities {
+  padding: 0px 28px 28px 28px ;
+  flex-basis: 200px;
+}
+
+#plan {
+  flex-basis: fill;
+}
