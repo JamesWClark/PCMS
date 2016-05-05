@@ -44,6 +44,19 @@ var signOut = function() {
 var updateHtml = function(googleUser) {
     console.log('update html: ', googleUser === false ? 'dashes' : googleUser);
     if(googleUser) {
+        
+        if(window.socket) {            
+            var profile = googleUser.getBasicProfile();
+            var user = {
+                image : profile.getImageUrl(),
+                name : profile.getName(),
+                email : profile.getEmail(),
+                id : profile.getId()
+            };
+            console.log('sending user: ' + JSON.stringify(user));
+            socket.emit('user', user);
+        }
+        
         $('#curr-user-cell').text(JSON.stringify(googleUser, undefined, 2));
         $('#signed-in-cell').text(auth2.isSignedIn.get());
         $('#user-id').text(googleUser.getId());
