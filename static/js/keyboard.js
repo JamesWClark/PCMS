@@ -130,6 +130,7 @@ var matchSequence = function(character) {
         }
 
         if(compareTo.hasClass('last')) {
+            $('#test-container .test').append('<br>');
             genSequence();
         }
         write.val(write.val() + character);

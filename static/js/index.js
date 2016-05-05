@@ -1,21 +1,36 @@
 $(document).ready(function() {
     var socket = io();
     
-    socket.on('admin drop', function(data) {
-        alert('admin dropped');
-        console.log('admin drop');
-    });
+    var dycss = $('#dynamic-stylesheets');
+    var dyjs  = $('#dynamic-scripts');
+    var dyhtm = $('#dynamic-content');
     
-    socket.on('welcome', function(msg) {
-        console.log(msg);
-    });
+    var loadContent = function(filename) {
+        var html = '/protos/' + filename + '.html';
+        var css = '<link rel="stylesheet" href="/static/css/' + filename + '.css">';
+        var js = '<script src="/static/js/' + filename + '.js"></script>';
+        
+        $.get(html, function(content) {
+            dyhtm.html(content);
+            dycss.html(css);
+            dyjs.html(js);
+        });
+    };
     
-    socket.on('send', function(msg) {
-        alert('send = ' + msg);
-    });
-    
-    socket.on('msg', function(msg) {
-        alert(msg);
-        console.log(msg);
+    socket.on('view change', function(command) {
+        
+        dyhtm.html('');
+        dycss.html('');
+        dyjs.html('');
+                
+        if(command === 'Speed Reader') {
+            loadContent('speed-reader');            
+        } else if (command === 'Typing Test') {
+            loadContent('keyboard');            
+        } else if (command === 'Ace Processing') {
+            loadContent('ace-processing');
+        } else {
+            
+        }
     });
 });

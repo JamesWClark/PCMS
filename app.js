@@ -26,25 +26,17 @@ app.get('/admin', function(req, res){
 io.on('connection', function(socket) {
     
     
-    console.log('user connected');
+    console.log('user connected');    
     
-    // when a user connects, send this message to the other users only (but not this user)
-    socket.broadcast.emit('msg', "Oh Hai! You're here!");
-    
-    
-    
-    socket.on('admin drop', function(data) {
-        
-        console.log('admin dropped!!');
-        io.emit('admin drop', data);
+    socket.on('disconnect', function() {
+        console.log('user disconnected');
     });
     
-    socket.on('send', function(msg) {
-        console.log(msg);
-        io.emit('msg', "another user got F'd");
+    socket.on('view change', function(command) {
+        console.log(command);
+        io.emit('view change', command);
     });
-    
-    
+
 });
 
 

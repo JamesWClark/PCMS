@@ -1,0 +1,16 @@
+#editor {
+    height: 400px;
+}
+
+#sketch {
+    /* cursor: none; */
+}
+
+#support-message {
+    background-color: red;
+    border: solid black 1px;
+    color: white;
+    display: none;
+    font-weight: bold;
+    padding: 7px;
+}

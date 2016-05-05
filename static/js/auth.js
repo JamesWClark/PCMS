@@ -48,12 +48,14 @@ var updateHtml = function(googleUser) {
         $('#signed-in-cell').text(auth2.isSignedIn.get());
         $('#user-id').text(googleUser.getId());
         $('#user-scopes').text(googleUser.getGrantedScopes());
-        $('#auth-response').text(JSON.stringify(googleUser.getAuthResponse(), undefined, 2));    
+        $('#auth-response').text(JSON.stringify(googleUser.getAuthResponse(), undefined, 2));
+        $('#main-app').show();
     } else {
         $('#curr-user-cell').text('--');
         $('#signed-in-cell').text('--');
         $('#user-id').text('--');
         $('#user-scopes').text('--');
         $('#auth-response').text('--');  
+        $('#main-app').hide();
     }
 };

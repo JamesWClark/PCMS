@@ -1,0 +1,69 @@
+Technology research company Gartner’s definition of internet of things (IoT) is as follows: “A network of physical objects that contain embedded technology to sense or interact with their internal state or external environment. The IoT comprises an ecosystem that includes things, communication, applications and data analysis.”
+
+What we are looking at is a growing network of interconnectedness between intelligent electronic devices. This could mean, for example, all the ‘things’ in our kitchen working together, with sensors, alerts and apps to let you know wherever you are, that there isn’t enough milk in the fridge, before connecting with an online shopping app so you can top up your supplies. However, the potential goes far beyond the kitchen, to whole communities, cities, and even countries, interconnected and sharing information like massive self-monitoring nervous systems.
+
+The ultimate goal is to make our lives easier and safer, and the opportunities IoT could present are hugely exciting. The technology will be applicable across all sectors, enabling us to, for example, improve our energy usage, healthcare, and the way we do business.
+
+Jeremy Green, principal analyst at machine to machine communications analysis company Machina Research, describes the scale of IoT’s future impact: “The language people are using, they’re talking about this as the fourth industrial revolution, with the first being steam, the second being electricity, the third being about information, and this the fourth: connected things.”
+
+Plamen Nedeltchev, from leading technology company Cisco, believes IoT could see us “inching towards utopia”.
+
+“What we are looking at is a growing network of interconnectedness between intelligent electronic devices.”
+
+He says: “People will be the beneficiaries of this new IoT economy, which will create opportunities unknown today and transform every facet of society. People will be able to reduce waste, protect our environment, boost farm production, get early warnings of structural weaknesses in bridges and dams, and enable remotely controlled lights, sprinkler systems, washing machines, sensors, actuators, and gadgets.
+
+“Although we may never solve world hunger, in this new economy, some aspects of utopia could likely become reality. Imagine the following scenarios: If resources were allocated based on people’s needs, perhaps poverty and hunger could be significantly alleviated.
+
+“If we could eliminate parking problems and reduce urban traffic by 20 to 30 per cent, auto accidents and road deaths could also decrease. If improvements were made in waste reduction and management of street lighting, emergency notifications, traffic lights, and environmental monitoring, which saved South Korea $13 billion in 2013, other countries and cities could achieve similar gains. If factories could decide how to better produce goods on the assembly line, they could optimise energy and save about 20 to 30 per cent on their energy bill.”
+
+While the concept sounds futuristic, IoT is already here. Cisco CEO John Chambers says: “This transformation is happening now. It will change the way people live, work, and play.”
+
+British Gas’ Hive enables your thermostat and boiler speak to each other while you regulate hot water and heating from mobile devices. Products like Mother from IoT company Sen.se, can intelligently interact with other devices to manage your life, providing reminders for when to take pills or wake up, whilst analysing your sleep patterns, caffeine consumption and levels of exercise.
+
+Food supply chains are improving transparency by becoming interconnected, and disease prevention is being planned, as technology is developed to learn, predict and warn. Smart farming and connected agriculture is on its way, with irrigation becoming more efficient, based on real-time data, tackling the major problem of the world’s water overuse.
+
+Fascinating developments are afoot across the globe, giving us a glimpse into the future. Onyx Beacon, a team of young entrepreneurs based in Hungary, is using IoT to help visually impaired people use public transport.
+
+In partnership with the Vodafone Foundation, the Tandem Association and the public transportation company in Bucharest, Onyx Beacon plans to deploy hundreds of ‘iBeacons’ in public transport vehicles, linked to mobile applications that will notify users, building “a solid communication infrastructure that will help visually-impaired people get on the right bus when the vehicle arrives in the station, customize complicated routes, and not get lost on their way to a precise destination”.
+
+Swedish company Sustainable Innovation is working on a number of energy-saving projects with IoT, for example buildings that control ventilation based on the number of mobile phones that are on the premises. Chief technology officer Joachim Lindborg said: “It’s much better than running the fans on all the time and if you also add humidity and CO2 you can start to deliver air quality instead of changing the volume of air”.
+
+The Airkami and WaterBank project in Yogyakarta Java, Indonesia, is creating “an urban intervention in compromised water resources”, delivering biosensor-based pathogen analysis data and creating a public water well and water sharing system that makes clean water available to locals.
+
+“The potential goes far beyond the kitchen, to whole communities, cities, and even countries, interconnected and sharing information like massive self-monitoring nervous systems.”
+
+Professor Marc Böhlen from the University of Buffalo, the project’s principle investigator, manager, and engineer/designer, explained IoT’s role in the technology: “Healthcare workers collect water samples from the water wells and bring them to the healthcare centre. There a high-end miniaturised bioincubator automatically evaluates the contamination levels of E.coli and total coliform overnight. The results are sent to a local server and from there to the cloud (Amazon AWS) for storage and analysis. After analysis, we send the results to local physicians’ mobile phones with a water boil advisory for whichever wells are currently not drinkable.
+
+Like what you’re reading? Get your Positive News subscription here
+
+“There is also a weather system connected to the network. By combining real-time weather data with water quality data, we have been able to establish relationships between well water quality and seasonal rain fall.
+
+“Finally, we have added a public water well and water improvement system based on the results from the analytical work. This way we create a complete ecosystem from analysis to urban intervention.”
+
+On a larger scale, South Korea’s Songdo International Business District (IBD), often dubbed the world’s first smart city, is due to be completed this year after a decade of development. Built on 1,500 acres of reclaimed land, it features sensor-regulated street lighting, traffic control and automatic garbage sorting. The plan is for Songdo’s citywide water recycling to reach 40 per cent and waste recycling 76 per cent by the year 2020.
+
+A spokesperson says: “Long-term sustainability and the minimisation of the city’s carbon footprint have been considered in every design and engineering decision by master-plan architect Kohn Pedersen Fox (KPF) and chief engineer Arup”. KPF believes that the overall energy use in Songdo IBD will be up to 40 per cent less per person than an average existing city.
+
+Machina Research’s Green says that since much of the world’s carbon footprint comes from cooling and heating buildings, making them intelligent is the obvious way in which IoT could be a force for good.
+
+Self-driving cars too, will be a major advance, according to Green. They will produce fewer accidents and make roads more efficient as they can drive closer to each other and communicate with each other. Since your car isn’t doing anything most of the time, IoT would also allow other people to make use of the vehicle when you aren’t.
+
+The message is clear with all these examples; as Green puts it, IoT will be force for good as “it’s about reuse of resources and more efficient use of resources.
+
+“It’s a finite planet, we’re not making any more planets, and if we can use what we’ve got more efficiently, then we don’t have to waste so much of it,” he adds.
+
+Estimates suggest that the IoT market value could reach almost $15 trillion by 2020, so businesses are advised to prepare themselves. Furthermore, there are privacy concerns as ‘things’ become ever more intelligent and interconnected. Therefore, experts advise companies to ensure they are ready if they are to make the most of what’s to come.
+
+A Gartner study, which surveyed hundreds of IT and business leaders, suggested that while IoT is a “revolution waiting to happen”, organisations need to do more to prepare themselves.
+
+Businesses could use IoT as a major force for good, to reduce waste and maximise human resources, for example. However, the research suggests that only a small number of organisations have deployed initiatives.
+
+Companies need not invest millions of pounds to get prepared: “The falling costs of networking and processing mean that there are few economic inhibitors to adding sensing and communications to products costing as little as a few tens of dollars. The challenge of the IoT is less in making products ‘smart’ and more in understanding the business opportunities enabled by smart products and new ecosystems,” says Gartner.
+
+The survey showed that leadership is needed in companies, with only a quarter of respondents saying they had established clear business leadership for the IoT. It revealed that small and large companies had been more active in setting up IoT leadership than mid-size businesses, while the Asia/Pacific region is the most ready globally.
+
+Organisations expect IoT to have a major short- and long-term impact, but need to ensure strategies are in place. Gartner’s recommendations are as follows: “Appoint an individual to head up IoT initiatives and act as a technical and business focus for the domain.
+
+“Educate the organisation on the IoT to improve general understanding at all levels of the organisation, especially among staff in non-technical roles. This will help the organisation improve its understanding and identify opportunities.
+
+“Begin skills planning immediately, if you expect the IoT to impact you in the short term, identify which new skills will be required and find staff and sourcing partners.”

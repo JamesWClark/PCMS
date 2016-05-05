@@ -13,38 +13,40 @@
     <div id="signin" class="g-signin2"></div>
     <button id="signout" onclick="signOut()">Signout</button>
   </div>
+  
+  <div id="main-app" class="null">
 
-  <div class="null">
-    <div>Signed in Cell: <span id="signed-in-cell">--</span></div>
-    <br>
-    <div>Current User: <span id="curr-user-cell">--</span></div>
-    <br>
-    <div>User ID: <span id="user-id">--</span></div>
-    <br>
-    <div>User Scopes: <span id="user-scopes">--</span></div>
-    <br>
-    <div>Auth Response: <span id="auth-response">--</span></div>
-  </div>
-
-  <button id="send">Send</button>
-
-  <div class="flex">
-    <div class="x1 flex column" id="activities">
-      <div class="inline activity center draggable" id="speed-reader">Speed Reader</div>
-      <div class="inline activity center draggable" id="ace-processing">Ace Processing</div>
-      <div class="inline activity center draggable" id="typing-test">Typing Test</div>
+    <div class="null">
+      <div>Signed in Cell: <span id="signed-in-cell">--</span></div>
+      <br>
+      <div>Current User: <span id="curr-user-cell">--</span></div>
+      <br>
+      <div>User ID: <span id="user-id">--</span></div>
+      <br>
+      <div>User Scopes: <span id="user-scopes">--</span></div>
+      <br>
+      <div>Auth Response: <span id="auth-response">--</span></div>
     </div>
-    <div class="x6 flex column sortable" id="plan"></div>
-  </div>
 
-  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script src="https://apis.google.com/js/platform.js?onload=appStart" async defer></script>
-  <script src="/static/js/auth.js"></script>
-  <script src="/static/js/admin.js"></script>
-  <script src="/static/js/colors.js"></script>
+    <div class="flex">
+      <div class="x1 flex column" id="activities">
+        <div class="inline activity center draggable" id="speed-reader">Speed Reader</div>
+        <div class="inline activity center draggable" id="ace-processing">Ace Processing</div>
+        <div class="inline activity center draggable" id="typing-test">Typing Test</div>
+      </div>
+      <div class="x6 flex column sortable" id="plan"></div>
+    </div>
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=appStart" async defer></script>
+    <script src="/static/js/auth.js"></script>
+    <script src="/static/js/admin.js"></script>
+    <script src="/static/js/colors.js"></script>
+    
+  </div>
 </body>
 
 </html>
