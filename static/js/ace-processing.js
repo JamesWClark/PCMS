@@ -48,7 +48,7 @@ var setEditorCode = function(code) {
 };
 
 var setNewSketch = function(code) {
-    Processing.getInstanceById('sketch').exit();
+    //Processing.getInstanceById('sketch').exit();
     var container = $('#canvas-container');
     var canvas = document.createElement('canvas');
     canvas.id = 'sketch';

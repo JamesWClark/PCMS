@@ -2,18 +2,25 @@
 
 <div id="canvas-container"><canvas id="sketch"></canvas></div>
 
-<script id="processing-code" type="text/processing" data-processing-target="sketch">void setup() {
-    size(500,500);
-}
-
-void draw() {
-    background(125);
-    ellipse(mouseX, mouseY, 50, 50);
-}</script>
+<div id="processing-code-script-container"></div>
 
 <div>
   <button id="run">Run</button>
   <input type="file" id="files" name="files[]" multiple />
 </div>
 
-<pre id="editor"></pre>
+<div class="flex">
+  <div class="x1">
+    <pre><code>void setup() {
+    size(500,500);
+}
+
+void draw() {
+    background(125);
+    ellipse(mouseX, mouseY, 50, 50);
+}</code></pre>
+  </div>
+  <div class="x5">
+    <pre id="editor"></pre>    
+  </div>
+</div>

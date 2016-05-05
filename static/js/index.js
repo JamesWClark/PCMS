@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var socket = io();
+    window.socket = io();
     
     var dycss = $('#dynamic-stylesheets');
     var dyjs  = $('#dynamic-scripts');
@@ -12,6 +12,7 @@ $(document).ready(function() {
         
         $.get(html, function(content) {
             dyhtm.html(content);
+        }).then(function() {
             dycss.html(css);
             dyjs.html(js);
         });
@@ -26,7 +27,7 @@ $(document).ready(function() {
         if(command === 'Speed Reader') {
             loadContent('speed-reader');            
         } else if (command === 'Typing Test') {
-            loadContent('keyboard');            
+            loadContent('keyboard');
         } else if (command === 'Ace Processing') {
             loadContent('ace-processing');
         } else {

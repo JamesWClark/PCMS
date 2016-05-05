@@ -97,6 +97,7 @@ var getRandomPrint = function() {
 
 // generates a random sequence of characters for a typing test
 var genSequence = function() {
+    console.log('gen sequence');
     var w = $('#keyboard-container').innerWidth();
     var ems = parseFloat($('html').css('font-size'));
     var wxems = w/(16 + ems) - 1;
@@ -133,9 +134,14 @@ var matchSequence = function(character) {
             $('#test-container .test').append('<br>');
             genSequence();
         }
+        socket.emit('key send', { 
+            timestamp : moment(), 
+            key : character,
+            was : compareTo.text()
+        });
         write.val(write.val() + character);
     }
-}
+};
 
 //update the state of the keys pressed in the keyboard UI
 var updateKeyboard = function(target, event) {
@@ -375,9 +381,14 @@ var registerHandlers = function () {
         $('#string').html(s);
         $('#keypress').html(e.keyCode);
     });
+    
+    $('#btnBegin').click(function() {
+        $(this).hide();
+        genSequence();
+    });
 };
 
-$(document).ready(function () {
+$(document).ready(function() {
     registerHandlers();
-    genSequence();
 });
+

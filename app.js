@@ -6,25 +6,15 @@ var io = require('socket.io')(http);
 app.use('/static', express.static(__dirname + '/static'));
 app.use('/', express.static(__dirname + '/site'));
 
-/*
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/site/index.html');
-});
 
 
-app.get('/admin', function(req, res){
-  res.sendFile(__dirname + '/site/admin.html');
-});
-*/
-
-
-
-
+var currentApp = '';
 
 
 
 io.on('connection', function(socket) {
     
+    io.emit('view change', currentApp);
     
     console.log('user connected');    
     
@@ -33,8 +23,13 @@ io.on('connection', function(socket) {
     });
     
     socket.on('view change', function(command) {
+        currentApp = command;
         console.log(command);
         io.emit('view change', command);
+    });
+    
+    socket.on('key send', function(data) {
+        console.log(data.timestamp + ': ' + data.key + '|' + data.was);
     });
 
 });
