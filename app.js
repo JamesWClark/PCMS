@@ -16,6 +16,9 @@ var user = {};
 
 io.on('connection', function(socket) {
     
+    var clientIp = socket.request.connection.remoteAddress;
+    console.log(clientIp);
+    
     io.emit('view change', currentApp);
     
     console.log('user connected');    
@@ -41,12 +44,9 @@ io.on('connection', function(socket) {
     
     socket.on('user', function(user) {
         socket.user = user;
-        //console.log('received user = ' + JSON.stringify(user));
-        if(!users.hasOwnProperty(user.email)) {
-            users[user.email] = user;
-        } else {
-            users[user.email].online = true;
-        }
+        user.online = true;
+        user.ip = clientIp;
+        users[user.email] = user;
         io.emit('admin user update', user);
     });
     

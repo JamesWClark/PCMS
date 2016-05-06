@@ -18,6 +18,7 @@ $(document).ready(function () {
                     html += '<div class="inline">'; 
                         html += '<div class="block">' + user.name + '</div>';
                         html += '<div class="block">' + user.email + '</div>';
+                        html += '<div class="block">' + user.ip + '</div>';
                     html += '</div>';
                 //}
                 html += '</div>';
